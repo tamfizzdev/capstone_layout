@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* first header */
 .link {
     width: 100%;
     background-color: #0d369f;
@@ -23,3 +29,59 @@
     color: pink;
     transition: 0.25s;
 }
+
+.fa-phone {
+    padding-right: 8px;
+}
+
+.fa-envelope {
+    padding-right: 10px;
+}
+/* end first header */
+/* Homeblock */
+.homeBlock {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* background-size:cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url("./picture/bg3.jpg"); */
+    background: #ffffff url("./img/bg3.jpg") no-repeat bottom;
+}
+
+.homeBlock_content {
+    position: absolute;
+    right: 10%;
+}
+
+.homeBlock_content_cardpack {
+    display: flex;
+}
+
+.homeBlock_content_cardpack_card {
+    width: 370px;
+    display: flex;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px;
+    background-color: white;
+}
+
+.card_content p {
+    opacity: 0.5;
+}
+
+.card_icon {
+    background-color: #e9edf6;
+    padding: 7%;
+    border-radius: 50%;
+    margin: auto 15px;
+}
+
+.card_icon i {
+    color: #0d369f;
+}
+/* end homeblock */
