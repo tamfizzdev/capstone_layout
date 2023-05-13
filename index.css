@@ -7,12 +7,14 @@
 .link {
     width: 100%;
     background-color: #0d369f;
+   
 }
 
 .link_content {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
+
 }
 
 .link_content div {
@@ -37,7 +39,59 @@
 .fa-envelope {
     padding-right: 10px;
 }
+
+.navbar-light .navbar-nav .nav-link {
+    color: #060606;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FF6e65;
+    transition: 0.2s;
+
+}
+.navbar-light .navbar-brand span:hover {
+    color: #FF6e65;
+    transition: 0.2s;
+
+}
+.dropdown-item:hover{
+    color: #FF6e65;
+    transition: 0.2s;
+
+}
+i.fa.fa-search{
+    color: #0d369f;
+}
+i.fa.fa-search:hover{
+    color: #FF6e65;
+    transition: 0.2s;
+
+}
+i.fa.fa-moon{
+    color: #0d369f;
+}
+i.fa.fa-moon:hover{
+    color: #FF6e65;
+    transition: 0.2s;
+
+}
+i.fa.fa-sun{
+    color: #0d369f;
+    
+}
+i.fa.fa-sun:hover{
+    color: #FF6e65;
+    transition: 0.2s;
+}
+
 /* end first header */
+header{
+    position: fixed;
+    top: 30px;
+
+    width: 100%;
+    padding: 5px 0px;
+    z-index: 2;
+}
 /* Homeblock */
 .homeBlock {
     width: 100%;
@@ -228,6 +282,47 @@ p.card-text {
     color: #707070;
  }
 /* end feature-body */
+/* Light theme */
+#myBody {
+    background-color: white;
+}
+
+#switchButton {
+    background-color: white;
+}
+
+#switchButton .fa-sun {
+    display: none;
+}
+
+#switchButton .fa-moon {
+    display: block;
+}
+
+/* Dark Theme*/
+.dark#myBody {
+    background-color: black;
+}
+
+.dark #switchButton {
+    background-color: black;
+    border: 1px solid white;
+}
+
+.dark #switchButton .fa-sun {
+    display: block;
+    color: white;
+}
+
+.dark #switchButton .fa-moon {
+    display: none;
+}
+
+.dark .card {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
 /* Homeblock */
 .homeBlock {
     width: 100%;
