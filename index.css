@@ -87,10 +87,14 @@ i.fa.fa-sun:hover{
 header{
     position: fixed;
     top: 30px;
-
     width: 100%;
     padding: 5px 0px;
     z-index: 2;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
 /* Homeblock */
 .homeBlock {

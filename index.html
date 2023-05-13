@@ -48,7 +48,7 @@
     </div>
     <!-- end first header -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="myHeader">
         <a
           class="navbar-brand"
           href="#"
@@ -367,6 +367,20 @@
         });
       });
     </script> -->
+    <script>
+      window.onscroll = function () {
+        headerFixed();
+      };
+      var header = document.getElementById('myHeader');
+      var sticky = header.offsetTop;
+      function headerFixed() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add('sticky');
+        } else {
+          header.classList.remove('sticky');
+        }
+      }
+    </script>
     <script>
       document.getElementById('switchButton').onclick = function () {
         document.getElementById('myBody').classList.toggle('dark');
